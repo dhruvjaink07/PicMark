@@ -18,11 +18,7 @@ class GistFilesScreen extends StatelessWidget {
           String fileUrl = files[fileName]['raw_url'];
 
           return ListTile(
-            title: Text(fileName),
-            onTap: () {
-              // Open the file URL in a web view or browser
-              // (Implementation for this would depend on the specific use case)
-            },
+            title: Text(fileName)
           );
         },
       ),

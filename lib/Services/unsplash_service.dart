@@ -11,7 +11,6 @@ class UnsplashService {
     );
 
     if (response.statusCode == 200) {
-      // Parse the JSON response
       List<dynamic> data = jsonDecode(response.body);
       return data.map((json) => UnsplashImage.fromJson(json)).toList();
     } else {
